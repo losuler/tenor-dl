@@ -11,7 +11,7 @@ clint
 
 # Configuration
 
-A developer API key is **required** ([see here](https://tenor.com/gifapi/documentation#quickstart-setup)). This is to be provided in `config.ini` (see `config.ini.example`) or as an optional argument.
+A [developer API key](https://tenor.com/gifapi/documentation#quickstart-setup) is **required**. This is to be provided in `config.ini` (see `config.ini.example`) or as an optional argument.
 
 # Usage
 
