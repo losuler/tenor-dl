@@ -58,7 +58,7 @@ def download_gif(gif_url, gif_name):
                 f.write(chunk)
                 f.flush()
 
-def main():
+if __name__ == "__main__":
     args = argparse_init()
     gif_id = args.id
 
@@ -77,6 +77,3 @@ def main():
 
     print("TITLE: {name}".format(name=gif_name))
     print("URL: {url}".format(url=gif_url))
-
-if __name__ == "__main__":
-    main()
