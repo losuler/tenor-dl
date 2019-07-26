@@ -32,6 +32,11 @@ def parse_config():
 def request_gif(gif_id, api_key):
     resp = requests.get("https://api.tenor.com/v1/gifs?ids={id}&key={key}"
                         .format(id=gif_id, key=api_key)).json()
+
+    if resp['error']:
+        err_msg = resp['error']
+        sys.exit("{ERROR} {MESSAGE} ".format(ERROR=ERROR, MESSAGE=err_msg))
+
     gif_url = resp['results'][0]['media'][0]['gif']['url']
 
     title = resp['results'][0]['title']
