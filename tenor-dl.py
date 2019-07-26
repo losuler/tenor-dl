@@ -30,10 +30,11 @@ def parse_config():
     return api_key
 
 def request_gif(gif_id, api_key):
+    # Returns as a dict
     resp = requests.get("https://api.tenor.com/v1/gifs?ids={id}&key={key}"
                         .format(id=gif_id, key=api_key)).json()
 
-    if resp['error']:
+    if resp.get('error'):
         err_msg = resp['error']
         sys.exit("{ERROR} {MESSAGE} ".format(ERROR=ERROR, MESSAGE=err_msg))
 
