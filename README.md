@@ -16,6 +16,8 @@
 
 Allows a way to download .gif files from [Tenor](https://tenor.com/), which is presumably intentionally difficult or impossible to do via a web browser.
 
+> **Update**: It seems at some point since writing this script that Tenor now allows you to easily download gifs in the browser, albeit without unique filenames (all open as `tenor.gif`).
+
 ## Dependancies
 
 ```
